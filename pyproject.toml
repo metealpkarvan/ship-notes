@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ship-notes"
+version = "1.0.0"
+description = "Turn real Git commits into tidy Markdown progress notes."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Mete Alp Karvan"}]
+dependencies = []
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Version Control :: Git",
+]
+
+[project.urls]
+Homepage = "https://github.com/metealpkarvan/ship-notes"
+Issues = "https://github.com/metealpkarvan/ship-notes/issues"
+
+[project.scripts]
+ship-notes = "ship_notes.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ship_notes*"]
