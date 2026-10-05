@@ -99,3 +99,8 @@ CI checks multiple Python versions and Ubuntu, macOS, and Windows, including pac
 **Türkçe:** Git commit geçmişinden okunabilir ilerleme notları çıkarır. Haftalık özetler ve proje günlükleri için küçük, yerel çalışan bir komut satırı aracı.
 
 MIT © Mete Alp Karvan
+
+
+## Mac architecture support
+
+Works on Intel and Apple Silicon Macs with a native Python 3.9+ installation and Git. There are no compiled extension dependencies and Rosetta is not required. CI installs and exercises the CLI on both x86_64 and arm64 macOS runners in addition to the existing Linux and Windows checks.
